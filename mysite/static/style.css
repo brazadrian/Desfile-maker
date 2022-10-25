@@ -70,8 +70,12 @@ nav li{
 
 #basedosite{
     background-color: gray;
-    width: 80%;
+    width: 90%;
     min-height: 950px;
+    display: flex;
+    justify-content: center;
+    left: 5%;
+    top: 3%;
 }
 
 
@@ -79,6 +83,7 @@ footer{
     background-color: black;
     display: flex;
     flex-direction: column;
+    padding-left: 2%;
 }
 
 footer h2{
@@ -97,4 +102,14 @@ footer h2{
 .nomes{
     text-decoration: underline;
     color: white;
+}
+
+footer p{
+    color: white;
+}
+#logosenac{
+    
+    max-width: 30%;
+    min-width: 10%;
+    
 }
