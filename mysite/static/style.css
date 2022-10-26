@@ -7,6 +7,7 @@ nav{
     
 }
 
+
 nav button{
     background-color: transparent;
     border: none;
@@ -16,9 +17,7 @@ nav button{
     right:3%;
     
 }
-nav button:focus ~ ul{
-    height:auto;
-}
+
 
 nav a{
     text-decoration: none;
@@ -31,16 +30,25 @@ nav, ul{
     align-items: unset;
 }
 
-nav ul{
+.hiden{
     list-style: none;
     padding: none;
     text-align: center;
+    width: 100%;
     margin: 0;
     height: 0;
-    overflow: hidden;
-    transition: all .5s;
+    display: none;
 }
 
+.escondido{
+    list-style: none;
+    padding: none;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    height: 0;
+    display: flex;
+}
 
 
 nav li{
@@ -62,38 +70,44 @@ body{
 
     background-image: linear-gradient(#8828FE, #FE23D7, #FFBE00, #C1DC49, #3ED948);
     width: auto;
-    height: 1000px;
+    height: 100%;
     position:relative;
     z-index: 999;
+    scroll-behavior: smooth;
     
 }
 
 #basedosite{
-    margin: auto;
-    background-color: gray;
+    background-color: #1A1A1A;
     width: 90%;
+    margin-top: 1.8rem;
+    margin-left: 5%;
+    margin-right: 5%;
     min-height: 950px;
-    display: flex;
+    display:  flex;
     justify-content: center;
-    left: 5%;
-    top: 3%;
+    border-radius: 1.5rem 1.5rem 0 0;
 }
 
 
 footer{
     background-color: black;
-    border: 2rem solid #3ED948;
-    border-top: none;
     padding: 10px;
     display: flex;
     flex-direction: column;
     padding-left: 5%;
     padding-right: 5%;
     justify-content: space-around;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    border-radius: 0 0 1.5rem 1.5rem;
 }
 
 footer h2{
-    text-decoration:underline;
+    text-decoration: underline;
+    color: #3ED948;
     padding-left: 2%;
     
 }
@@ -103,8 +117,10 @@ footer h2{
     justify-content: space-evenly;
     flex-direction: row;
     width: 100%;
-    text-align: justify;
-    text-indent: 1rem;
+}
+
+.textorodape {
+    text-decoration: underline;
 }
 
 .nomes{
@@ -121,6 +137,7 @@ footer a{
     justify-content: center;
 
 }
+
 #logosenac{
     max-width: 30%;
     min-width: 10%;
