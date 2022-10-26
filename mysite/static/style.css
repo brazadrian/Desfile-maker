@@ -11,7 +11,7 @@ nav button{
     background-color: transparent;
     border: none;
     color: white;
-    font-size: 500%;
+    font-size: 200%;
     position: absolute;
     right:3%;
     
@@ -58,7 +58,7 @@ nav li{
 
 }
 
-#cordefundo{
+body{
 
     background-image: linear-gradient(#8828FE, #FE23D7, #FFBE00, #C1DC49, #3ED948);
     width: auto;
@@ -69,6 +69,7 @@ nav li{
 }
 
 #basedosite{
+    margin: auto;
     background-color: gray;
     width: 90%;
     min-height: 950px;
@@ -81,9 +82,14 @@ nav li{
 
 footer{
     background-color: black;
+    border: 2rem solid #3ED948;
+    border-top: none;
+    padding: 10px;
     display: flex;
     flex-direction: column;
-    padding-left: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    justify-content: space-around;
 }
 
 footer h2{
@@ -92,11 +98,13 @@ footer h2{
     
 }
 
-.textorodape{
+.textofooter{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-direction: row;
-    width: 40%;
+    width: 100%;
+    text-align: justify;
+    text-indent: 1rem;
 }
 
 .nomes{
@@ -107,8 +115,13 @@ footer h2{
 footer p{
     color: white;
 }
+
+footer a{
+    display: flex;
+    justify-content: center;
+
+}
 #logosenac{
-    
     max-width: 30%;
     min-width: 10%;
     
