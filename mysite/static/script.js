@@ -1,12 +1,9 @@
+let btnMenu = document.querySelector('.toggle-menu');
+let menuHamburguer = document.querySelector('.menu-hamburguer')
 
-const btn = document.getElementsByClassName('toggle')
-let escondido = document.querySelector('.hiden')
+btnMenu.addEventListener("click", menu);
 
-if(btn){
-    btn.addEventListener('click', swapper, menu);
-  }
-
-function menu() {
-    escondido.classList.toggle('escondido')
-    alert("ola")
+function menu(){
+  menuHamburguer.classList.toggle('show')
+  btnMenu.classList.toggle('active')
 }

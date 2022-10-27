@@ -1,64 +1,89 @@
-nav{
+nav {
     background-color: black;
     width: 100%;
-    height: auto;
+    padding-top: 1vh;
+    height: 8vh;
     justify-content: space-between;
     align-items: center;
-    
+
 }
 
 
-nav button{
+nav button {
     background-color: transparent;
     border: none;
     color: white;
     font-size: 200%;
     position: absolute;
-    right:3%;
-    
+    margin-top: 5px;
+    right: 3%;
 }
 
+.bar{
+display: block;
+width: 25px;
+height: 3px;
+margin: 5px auto;
+background-color: white;
+transition: .4s;
+}
+.toggle-menu.active .bar:nth-child(2){
+    opacity: 0;
+}
+.toggle-menu.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+}
+.toggle-menu.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+}
 
-nav a{
+nav a {
     text-decoration: none;
     color: white;
 }
 
-nav, ul{
+nav,
+ul {
     display: flex;
     flex-direction: column;
     align-items: unset;
+    width: 100vw;
+    list-style: none;
 }
 
-.hiden{
-    list-style: none;
+.menu-hamburguer {
     padding: none;
     text-align: center;
     width: 100%;
-    margin: 0;
-    height: 0;
-    display: none;
-}
-
-.escondido{
-    list-style: none;
-    padding: none;
-    text-align: center;
-    width: 100%;
-    margin: 0;
-    height: 0;
     display: flex;
+    top: -100vh;
+    height: 92vh;
+    background-color: black;
+    position: absolute;
+    transition: all .4s ease-in-out;
+}
+
+.show {
+    padding: none;
+    padding-top: 3%;
+    padding-bottom: 5%;
+    text-align: center;
+    display: flex;
+    top: 8vh;
+    position: absolute;
+    transition: all .4s ease-in-out;
+    border-radius: 0 0 .7rem .7rem;
 }
 
 
-nav li{
+nav li {
     padding: 2%;
     opacity: 0.8;
-    background-color: rgba(255, 255, 255, 0.2);
-    
+    width: 100%;
+    transition: 3s;
 }
 
-#logorecplay{
+#logorecplay {
 
     max-width: 30%;
     min-width: 10%;
@@ -66,32 +91,32 @@ nav li{
 
 }
 
-body{
+body {
 
     background-image: linear-gradient(#8828FE, #FE23D7, #FFBE00, #C1DC49, #3ED948);
     width: auto;
     height: 100%;
-    position:relative;
+    position: relative;
     z-index: 999;
     scroll-behavior: smooth;
-    
+
 }
 
-#basedosite{
+#basedosite {
     background-color: #1A1A1A;
     width: 90%;
     margin-top: 1.8rem;
     margin-left: 5%;
     margin-right: 5%;
     min-height: 950px;
-    display:  flex;
+    display: flex;
     justify-content: center;
     border-radius: 1.5rem 1.5rem 0 0;
     color: white;
 }
 
 
-footer{
+footer {
     background-color: black;
     padding: 10px;
     display: flex;
@@ -106,14 +131,14 @@ footer{
     border-radius: 0 0 1.5rem 1.5rem;
 }
 
-footer h2{
+footer h2 {
     text-decoration: underline;
     color: #3ED948;
     padding-left: 2%;
-    
+
 }
 
-.textofooter{
+.textofooter {
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
@@ -124,23 +149,42 @@ footer h2{
     text-decoration: underline;
 }
 
-.nomes{
+.nomes {
     text-decoration: underline;
     color: white;
 }
 
-footer p{
+footer p {
     color: white;
 }
 
-footer a{
+footer a {
     display: flex;
     justify-content: center;
 
 }
 
-footer .logosenac{
+footer .logosenac {
     max-width: 30%;
     min-width: 10%;
+
+}
+
+@media screen and (min-width:980px) {
+    nav{
+        height: auto;
+        width: auto;
+    }
+    .toggle-menu{
+        margin-top: 2vh;
+    }
+    .show{
+        top: 10vh;
+    }
+    #logorecplay {
+        max-width: 15%;
+        min-width: 10%;
+        left: 2%;
     
+    }
 }
