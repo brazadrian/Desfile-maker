@@ -8,7 +8,7 @@
 #
 # urls para QRCODE
 #
-http://i9i.app/senacrecplay
+http://i9i.app/senacrecnplay
 http://i9i.app/senacrp1
 http://i9i.app/senacrp2
 http://i9i.app/senacrp3
