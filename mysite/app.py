@@ -8,10 +8,10 @@ app = Flask(__name__)
 def principal():
     return render_template("principal.html")
 
-@app.route('/modelo01')
-def modelo01():
-    return render_template("modelo01.html")
+@app.route('/modelo1')
+def modeloUm():
+    return render_template("modelo_Um.html")
 
-@app.route('/modelo02')
-def modelo02():
-    return render_template("modelo02.html")
+@app.route('/modelo2')
+def modeloDois():
+    return render_template("modelo_Dois.html")
