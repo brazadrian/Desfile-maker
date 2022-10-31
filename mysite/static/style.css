@@ -122,10 +122,6 @@ body {
     margin-left: 5%;
     margin-right: 5%;
     min-height: 950px;
-    text-align: left;
-    padding-left: 5%;
-    padding-top: 5%;
-    padding-right: 2%;
     justify-content: center;
     border-radius: 1.5rem 1.5rem 0 0;
 }
@@ -133,10 +129,16 @@ body {
 #basedosite h1{
     text-decoration: underline;
     font-size: 25px;
+    text-align: left;
+    padding-left: 5%;
 }
 
 #basedosite p {
     color: white;
+    text-align: left;
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-right: 2%;
 }
 
 footer {
@@ -243,3 +245,5 @@ hr {
     margin: auto;
     color: gray;
 }
+
+  
