@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+.equipe{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    width: 90%;
+}
+  
+.titulo{
+    font-size: 3rem;
+    font-weight: 400;
+    color: #ffffff;
+    border-bottom: 2px solid #b52ced;
+}
+
+.subtitulo_coord{
+    font-size: 2.5rem; 
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #cf2ee3;
+}
+
+.subtitulo_estudante{
+    font-size: 2.5rem; 
+    margin-bottom: 0rem;
+    border-bottom: 2px solid #cf2ee3;
+}
+
+
+.cursos{
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #e054c7;
+    padding: 0.5rem;
+}
+
+.linha_amarela{
+    border-bottom: 2px solid #e6c934;
+}
+
+.linha_verde{
+    border-bottom: 2px solid #91da4f;
+}
+
+/*
+.cursos{
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    border: 1.2px solid #FFBE00;
+    border-radius: 5px;
+    padding: 1rem;
+    color: #FFBE00;
+}
+
+.cursos:hover{
+    background-color:#FFBE00;
+    transition: all 0.3s ease;
+}
+*/
+
+.nomes{
+    text-decoration: none;
+    margin-bottom: 1rem;
+}
+
+.cursos:hover{
+    color: #ffffff;
+}
+
+.div_imagem_equipe{
+    background-image: linear-gradient(to left, #8828FE, #FE23D7, #FFBE00, #C1DC49, #3ED948);
+    border-radius: 8px;
+    width: 90%;
+    text-align: center;
+    margin: 1rem 0 1rem 0;
+}
