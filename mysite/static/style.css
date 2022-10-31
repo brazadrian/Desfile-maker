@@ -80,6 +80,7 @@ ul {
     display: flex;
     top: 8vh;
     position: absolute;
+    z-index: 9;
     transition: all .7s ease-in-out;
     border-radius: 0 0 .7rem .7rem;
 }
@@ -110,7 +111,6 @@ body {
     width: auto;
     height: 100%;
     position: relative;
-    z-index: 999;
     scroll-behavior: smooth;
 
 }
