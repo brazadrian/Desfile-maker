@@ -107,7 +107,7 @@ nav li {
 }
 
 body {
-    background-image: linear-gradient(#8828FE, #FE23D7, #FFBE00, #C1DC49, #3ED948);
+    background-image: linear-gradient(#8828FE, #FE23D7,#FE5400, #C1DC49, #3ED948);
     width: auto;
     height: 100%;
     position: relative;
@@ -193,6 +193,31 @@ footer .logosenac {
 
 }
 
+
+@media screen and (min-width:450px) {
+    #logorecplay {
+        max-width: 25%;
+        min-width: 10%;
+        left: 2%;
+    
+    }
+}
+@media screen and (min-width:560px) {
+    #logorecplay {
+        max-width: 20%;
+        min-width: 10%;
+        left: 2%;
+    
+    }
+}@media screen and (min-width:700px) {
+    #logorecplay {
+        max-width: 16%;
+        min-width: 10%;
+        left: 2%;
+    
+    }
+    
+}
 @media screen and (min-width:840px) {
     nav{
         height: auto;
@@ -244,4 +269,10 @@ hr {
     color: gray;
 }
 
-  
+abbr {
+    text-decoration: none;
+}
+
+/* #texto-Cardin p {
+    
+}*/
