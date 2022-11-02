@@ -19,6 +19,9 @@
       href="../static/sobrenos.style.css"
     />
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
     <title>Recn'Play</title>
 
 </head>
@@ -61,27 +64,173 @@
     </header>
 
     <div id="basedosite">
-        <br>
-        <h1 style="text-align: center;
-        text-decoration: underline;
-        text-decoration-color: #BA26ED;
-        font-size: 25px;
-        color: #BA26ED;">Pierre Cardin</h1>
-        <hr>
-        <br>
-        <div id="texto-Cardin">
-            <p>Primeiro alfaiate da Maison Dior, estilista dos Beatles e pioneiro da minissaia na passarela, ele associou seu nome a coleções masculinas e femininas, design de interiores, hotéis e restaurantes, para uma criatividade de 360 ​​graus. De quebra, em 1959, a ideia de lançar a primeira coleção de prêt-à-porter nas lojas Printemps e de aproximar a moda de um público mais amplo estava surgindo. Abandonado a Chambre Syndacale em 1996, Cardin sempre expôs suas coleções no Espace Cardin, inaugurado em 1971 e utilizado, em nome do seu amor pela arte, também para a promoção de jovens atores e músicos. Mas quem é esse patrono designer realmente? A resposta está nos inúmeros marcos de sua biografia.</p>
-            <p>Pierre Cardin, o estilista que conseguiu se firmar como uma figura revolucionária da moda, adorava dizer: “As roupas que prefiro são aquelas que inventei para uma vida que ainda não existe, para o mundo de amanhã”. Talvez seja também por isso que ele foi um dos designers mais inovadores.</p>
-            <p>Em 1957, a alta costura voltou a ocupar suas paixões e Cardin, junto com seu braço direito André Olivier, apresentou seus primeiros modelos. Seus “robe bulles” (vestidos bolha) alcançaram sucesso imediato e logo correram o mundo. No final da década de 1950 inaugurou sua primeira butique na 118 Rue du Faubourg de Saint-Honoré em Paris e ao lado da moda feminina algumas criações para o público masculino. Em 1958, Pierre Cardin foi o primeiro designer europeu a abrir uma loja no Japão, onde também começou a ensinar cortes tridimensionais na escola de moda Bunka Fukuso.</p>
-            <p>“Fui o primeiro socialista da moda”, disse Cardin no passado, que em 1959 assina um contrato de distribuição com as grandes lojas Printemps e com a Rinascente, e por isso é expulso da Chambre Syndacale. "Com o dinheiro obtido com esses contratos - salienta - financiei-me, ampliei os meus ateliers, comprei uma loja de camisas que me sugeriu a ideia da moda masculina". Pioneiro do prêt-à-porter, Cardin aposta na produção industrial de roupas e acessórios: “Fiz isso por dois motivos – explicou Cardin em inúmeras entrevistas à imprensa internacional – um: econômico. Com alta moda você não pode fazer a quantidade e, portanto, o lucro. Somente produzindo em série, com preços acessíveis, você tem lucro. A outra razão, digamos assim, foi ideológica: um pouco de esquerda, um pouco de socialista. Eu queria colocar a moda ao alcance de todos, não apenas dos ricos. Eu procurava, repito, uma forma de mudar a face do mundo: o uso generalizado de roupas prêt-à-porter servia para isso”.</p>
-            <p>Cardin introduziu também, no campo da moda masculina, o gosto pelas roupas extravagantes, pelas cores e padrões, em contraste com o rigor imposto pela tradição britânica da época. Por esta razão, quando em 1963 o empresário e produtor inglês Brian Epstein decidiu mudar a imagem dos Beatles e remover o couro preto desenfreado de seus primeiros looks, ele se voltou para Cardin. Nasce o look Beatles: calças justas, botins com elástico nas laterais e casacos sem gola. Na moda feminina, o estilista é presença constante, podendo chegar a 300 modelos e alternar roupas sofisticadas e pura elegância, com criações quase kitsch e invenções futuristas.</p>
-            <p>Pierre Cardin foi um dos primeiros designers de sua época a trazer para a passarela a minissaia bem justa com fendas sensuais. O seu é um estilo vanguardista: vestidos de acrílico, shorts de vinil e acessórios de plástico. Sua capacidade de brincar com tecidos às vezes chega a ignorar as formas femininas, aproximando as roupas das obras arquitetônicas. Ele foi o responsável pela difusão da moda unissex, experimental e pouco prática. Cardin se torna conhecido por seu estilo vanguardista, inspirado na era espacial, e também contrata um muito jovem Jean-Paul Gaultier como assistente.</p>
-            <p>No início da década de 1970, abre em Paris o L'Espace Pierre Cardin, que inclui um teatro, um restaurante, uma galeria de arte e um estúdio de design. Grande amante da arte, ao longo dos anos conheceu mestres como Picasso, Braque, Mirò e Dalì. Estas figuras de referência influenciaram a sua visão estilística e criativa, levando-o a empenhar-se na promoção de jovens talentos e a explorar, neste sentido, o L'Espace Cardin.</p>
-            <p>Agulha e linha não foram sua primeira vocação. “Fiz vários trabalhos antes de me tornar alfaiate. Eu era contador da Cruz Vermelha em Vichy. A profissão de contador me libertou, até mesmo para correr riscos, afastando-me dos bancos. Em 1945, assim que cheguei a Paris, onde fui contratado por Jeanne Paquin e depois por Elsa Schiaparelli, gostaria de ser bailarino. Fui ator. Já dirigi vários dos meus teatros. Como empresário, estive envolvido em muitas atividades. Eu até ensinei”.</p>
-            <p>O estilista morreu aos 98 anos, em 29 de dezembro de 2020, de causas naturais no hospital americano de Neuilly-sur-Seine, perto de Paris. Antes de morrer, ele designa seu sobrinho Rodrigo Basilicati Cardin como herdeiro artístico da maison, além de presidente das empresas que dirige. A empresa de Pierre Cardin hoje é uma importante multinacional, famosa em todo o mundo. Na verdade, está presente em cerca de 140 países e tem um valor de mercado de 1 bilhão de euros. Listada na bolsa de valores e com escritórios em todo o mundo, a empresa experimentou recentemente a perda de seu fundador, mas continuou com sucesso seus negócios.</p>        
-        </div>
-        <br>
-        <hr>
+        <section id="cardin">
+            <br>
+            <h1 style="
+                    color: #BA26ED;">Pierre Cardin (1922-2020)</h1>
+            <hr>
+            <br>
+            <br>
+            <div class="idiomas">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a data-toggle="tab" href="#português"><strong>Português / Portoghese</strong> 🟡🟢🔵</a></li>
+                    <li><a data-toggle="tab" href="#italiano"><strong>Italiano / Italian</strong> 🔴⚪🟢</a></li>
+                </ul>
+                <br>
+                <br>
+                <div class="tab-content">
+                    <div id="português" class="tab-pane fade in active">
+                        <div id="texto-Cardin-BR">
+                            <img src="../static/imgs/1-Pierre-Cardin.jpeg" alt="">
+                            <p>Primeiro alfaiate da Maison Dior, estilista dos Beatles e pioneiro da minissaia na passarela, ele associou seu
+                                nome a coleções masculinas e femininas, design de interiores, hotéis e restaurantes, para uma criatividade de
+                                360 ​​graus. De quebra, em 1959, a ideia de lançar a primeira coleção de prêt-à-porter nas lojas Printemps e de
+                                aproximar a moda de um público mais amplo estava surgindo. Abandonado a Chambre Syndacale em 1996, Cardin sempre
+                                expôs suas coleções no Espace Cardin, inaugurado em 1971 e utilizado, em nome do seu amor pela arte, também para
+                                a promoção de jovens atores e músicos. Mas quem é esse patrono designer realmente? A resposta está nos inúmeros
+                                marcos de sua biografia.</p>
+                        
+                            <p>Pierre Cardin, o estilista que conseguiu se firmar como uma figura revolucionária da moda, adorava dizer: “As
+                                roupas que prefiro são aquelas que inventei para uma vida que ainda não existe, para o mundo de amanhã”. Talvez
+                                seja também por isso que ele foi um dos designers mais inovadores.</p>
+                        
+                            <p>Em 1957, a alta costura voltou a ocupar suas paixões e Cardin, junto com seu braço direito André Olivier,
+                                apresentou seus primeiros modelos. Seus “robe bulles” (vestidos bolha) alcançaram sucesso imediato e logo
+                                correram o mundo. No final da década de 1950 inaugurou sua primeira butique na 118 Rue du Faubourg de
+                                Saint-Honoré em Paris e ao lado da moda feminina algumas criações para o público masculino. Em 1958, Pierre
+                                Cardin foi o primeiro designer europeu a abrir uma loja no Japão, onde também começou a ensinar cortes
+                                tridimensionais na escola de moda Bunka Fukuso.</p>
+                        
+                            <p>“Fui o primeiro socialista da moda”, disse Cardin no passado, que em 1959 assina um contrato de distribuição com
+                                as grandes lojas Printemps e com a Rinascente, e por isso é expulso da Chambre Syndacale. "Com o dinheiro obtido
+                                com esses contratos - salienta - financiei-me, ampliei os meus ateliers, comprei uma loja de camisas que me
+                                sugeriu a ideia da moda masculina". Pioneiro do prêt-à-porter, Cardin aposta na produção industrial de roupas e
+                                acessórios: “Fiz isso por dois motivos – explicou Cardin em inúmeras entrevistas à imprensa internacional – um:
+                                econômico. Com alta moda você não pode fazer a quantidade e, portanto, o lucro. Somente produzindo em série, com
+                                preços acessíveis, você tem lucro. A outra razão, digamos assim, foi ideológica: um pouco de esquerda, um pouco
+                                de socialista. Eu queria colocar a moda ao alcance de todos, não apenas dos ricos. Eu procurava, repito, uma
+                                forma de mudar a face do mundo: o uso generalizado de roupas prêt-à-porter servia para isso”.</p>
+                            <br>
+                            <img src="../static/imgs/CsNSAsl2-image-1667-scaled.jpg" alt="">
+                            <br>
+                            <p>Cardin introduziu também, no campo da moda masculina, o gosto pelas roupas extravagantes, pelas cores e padrões,
+                                em contraste com o rigor imposto pela tradição britânica da época. Por esta razão, quando em 1963 o empresário e
+                                produtor inglês Brian Epstein decidiu mudar a imagem dos Beatles e remover o couro preto desenfreado de seus
+                                primeiros looks, ele se voltou para Cardin. Nasce o look Beatles: calças justas, botins com elástico nas
+                                laterais e casacos sem gola. Na moda feminina, o estilista é presença constante, podendo chegar a 300 modelos e
+                                alternar roupas sofisticadas e pura elegância, com criações quase kitsch e invenções futuristas.</p>
+                        
+                            <p>Pierre Cardin foi um dos primeiros designers de sua época a trazer para a passarela a minissaia bem justa com
+                                fendas sensuais. O seu é um estilo vanguardista: vestidos de acrílico, shorts de vinil e acessórios de plástico.
+                                Sua capacidade de brincar com tecidos às vezes chega a ignorar as formas femininas, aproximando as roupas das
+                                obras arquitetônicas. Ele foi o responsável pela difusão da moda unissex, experimental e pouco prática. Cardin
+                                se torna conhecido por seu estilo vanguardista, inspirado na era espacial, e também contrata um muito jovem
+                                Jean-Paul Gaultier como assistente.</p>
+                        
+                            <p>No início da década de 1970, abre em Paris o L'Espace Pierre Cardin, que inclui um teatro, um restaurante, uma
+                                galeria de arte e um estúdio de design. Grande amante da arte, ao longo dos anos conheceu mestres como Picasso,
+                                Braque, Mirò e Dalì. Estas figuras de referência influenciaram a sua visão estilística e criativa, levando-o a
+                                empenhar-se na promoção de jovens talentos e a explorar, neste sentido, o L'Espace Cardin</p>
+                        
+                            <p>Agulha e linha não foram sua primeira vocação. “Fiz vários trabalhos antes de me tornar alfaiate. Eu era contador
+                                da Cruz Vermelha em Vichy. A profissão de contador me libertou, até mesmo para correr riscos, afastando-me dos
+                                bancos. Em 1945, assim que cheguei a Paris, onde fui contratado por Jeanne Paquin e depois por Elsa
+                                Schiaparelli, gostaria de ser bailarino. Fui ator. Já dirigi vários dos meus teatros. Como empresário, estive
+                                envolvido em muitas atividades. Eu até ensinei”.</p>
+                            <br>
+                            <img src="../static/imgs/pierre-cardin.jpg" alt="">
+                            <br>
+                            <p>O estilista morreu aos 98 anos, em 29 de dezembro de 2020, de causas naturais no hospital americano de Neuilly-sur-Seine, perto de Paris. Antes de morrer, ele designa seu sobrinho Rodrigo Basilicati Cardin como herdeiro artístico da maison, além de presidente das empresas que dirige. A empresa de Pierre Cardin hoje é uma
+                                importante multinacional, famosa em todo o mundo. Na verdade, está presente em cerca de 140 países e tem um
+                                valor de mercado de 1 bilhão de euros. Listada na bolsa de valores e com escritórios em todo o mundo, a empresa
+                                experimentou recentemente a perda de seu fundador, mas continuou com sucesso seus negócios.</p>
+                            <br>
+                            <br>
+                        </div>
+
+                    </div>
+
+                    <div id="italiano" class="tab-pane fade">
+                        <div id="texto-Cardin-ITY">
+                            <img src="../static/imgs/1-Pierre-Cardin.jpeg" alt="">
+                            <p>Pierre Cardin nasce in un piccolo paese italiano, Sant’Andrea di Barbarana, il 2 luglio del 1922. Figlio unico, si trasferisce con la famiglia in Francia quando ha solo 2 anni. I genitori, in povertà, decidono di trovare fortuna in un
+                            altro paese. La Francia diventa così la casa di Pietro Costante Cardin, che verrà naturalizzato in Pierre Cardin. Trasferendosi a Parigi nel 1945, studia architettura e lavora prima per Paquin, poi per Elsa Schiaparelli. Dior, che è
+                            al debutto, lo assume come primo tagliatore, ma gli incontri con Jean Cocteau e Christian Bérard lo spingono verso il teatro, tanto da fargli abbandonare la Maison Dior per aprire una sartoria teatrale.</p>
+                        
+                            <p>Primo sarto della maison Dior, stilista dei Beatles e pioniere della minigonna in passerella, ha associato il suo nome a collezioni per uomo e donna, interior design, hotel e ristoranti, per una creatività a 360 gradi. Di rottura l’idea di
+                            lanciare, nel 1959, la prima collezione di ready-to-wear nei magazzini Printemps e di avvicinare alla moda un pubblico più vasto. Abbandonata la Chambre Syndacale nel 1996, Cardin ha da sempre mostrato le sue collezioni nell’Espace Cardin, aperto nel 1971 e utilizzato, in nome del suo amore per l’arte, anche per la promozione di giovani teatranti e musicisti. Ma chi è davvero questo stilista mecenate? La risposta è nei numerosi traguardi della
+                            sua biografia.</p>
+                        
+                            <p>Pierre Cardin, lo stilista che ha saputo imporsi come figura rivoluzionaria della moda, amava dire: “Gli abiti che preferisco sono quelli che ho inventato per una vita che ancora non esiste, per il mondo di domani”. Forse anche per questo è stato uno dei designer più innovativi.<p>
+                        
+                            <p>Nel 1957 l’alta moda ha di nuovo il sopravvento tra le sue passioni e Cardin, insieme al suo braccio destro André
+                            Olivier, presenta i suoi primi modelli. Le sue “robe bulles” (i vestiti a bolle) ottengono un successo immediato e in
+                            breve tempo fanno il giro del mondo. Alla fine degli anni 50 inaugura la prima boutique al 118 di Rue du Faubourg de
+                            Saint-Honoré a Parigi e affianca al womenswear alcune creazioni per il pubblico maschile. Nel 1958 Pierre Cardin è il
+                            primo stilista europeo ad aprire un negozio in Giappone, dove inoltre inizia a insegnare taglio a tre dimensioni alla
+                            scuola di moda Bunka Fukuso.</p>
+                            <br>
+                            <img src="../static/imgs/CsNSAsl2-image-1667-scaled.jpg" alt="">
+                            <br>
+                            <p>“Sono stato il primo socialista della moda”, ha raccontato in passato Cardin, che nel 1959 firma un contratto di
+                            distribuzione con in grandi magazzini Printemps e con la Rinascente, e per questo viene espulso dalla Chambre Syndacale.
+                            “Con i soldi ricavati da quei contratti - puntualizza - mi sono autofinanziato, ho ingrandito i miei atelier, ho
+                            rilevato una camiceria che mi ha suggerito l’idea della moda da uomo”. Pioniere del prêt-à-porter, Cardin scommette
+                            sulla produzione industriale di abiti e di accessori: “L’ho fatto per due ordini di motivi - ha spiegato Cardin in
+                            numerose interviste alla stampa internazionale - uno: economico. Con l’alta moda non puoi fare la quantità e quindi il
+                            guadagno. Solo producendo in serie, con prezzi accessibili, hai profitto. L’altro motivo, diciamo così, era ideologico:
+                            un po’ di sinistra, un po’ socialista. Volevo mettere la moda alla portata di tutti, non solo dei ricchi. Cercavo, lo
+                            ripeto, il modo per cambiare faccia al mondo: la grande diffusione degli abiti prêt-à-porter serviva a questo”.</p>
+                        
+                            <p>Cardin introduce inoltre, nel campo della moda maschile, il gusto per capi estrosi, per colori e fantasie, in contrasto
+                            con il rigore imposto allora dalla tradizione britannica. Per questo, quando nel 1963 l’imprenditore e produttore
+                            inglese Brian Epstein decide di cambiare l’immagine dei Beatles e di togliere il cuoio nero dilagante dei look dei loro
+                            esordi si rivolge a Cardin. Nasce il look Beatles: pantaloni aderenti, tronchetti con elastici ai lati e giacche senza
+                            collo. Con il womenswear lo stilista è un habitué delle collezioni fiume, capace di arrivare fino a 300 modelli e di
+                            alternare abiti sofisticati e un’eleganza pura, a creazioni quasi kitsch e invenzioni futuristiche.</p>
+                        
+                            <p>Pierre Cardin è stato tra i primi stilisti della sua epoca a portare in passerella la minigonna, strettissima e con
+                            spacchi sensuali. Il suo è uno stile d’avanguardia: abiti in plexiglas, shorts di vinile e accessori in plastica. La sua
+                            abilità nel giocare con i tessuti arriva talvolta a ignorare le forme femminili, avvicinando gli abiti a opere
+                            architettoniche. A lui si deve la diffusione della moda unisex, sperimentale e poco pratica. Cardin diviene noto per il
+                            suo stile d'avanguardia, ispirato all'era spaziale, e assume come assistente anche un giovanissimo Jean-Paul Gaultier.</p>
+                        
+                            <p>All'inizio degli anni 70 apre a Parigi L'Espace Pierre Cardin che comprende un teatro, un ristorante, una galleria
+                            d'arte e uno studio di creazione di arredamento. Grande amante dell’arte, conosce, nel corso degli anni, maestri come
+                            Picasso, Braque, Mirò e Dalì. Queste figure di primo piano hanno influenzato la sua visione stilistica e creativa,
+                            portandolo ad impegnarsi a promuove giovani talenti e a sfruttare, in questo senso, L'Espace Cardin.</p>
+                            <br>
+                            <img src="../static/imgs/pierre-cardin.jpg" alt="">
+                            <br>
+                            <p>All'inizio degli anni 80 il designer rileva la catena di ristoranti Maxim's: in breve apre a New York, Londra e Pechino.
+                            Anche la catena degli Hotel Maxim's si aggiunge poi alla collezione di proprietà di Cardin. Il designer griffa ogni
+                            tipologia merceologica in tempi non sospetti: moda, design, arti, hotel, ristoranti, porcellane, profumi. Per la prima
+                            volta la firma di uno stilista viene abbinata a prodotti al di fuori dell’abbigliamento, che vengono, in un certo senso,
+                            nobilitati.</p>
+
+                            <p>Ago e filo non siano stati la sua prima vocazione. “Ho svolto vari lavori prima di diventare sarto. Ho fatto il
+                            contabile della Croce rossa a Vichy. La professione di ragioniere mi ha reso libero, anche di rischiare, tenendomi
+                            lontano dalle banche. Nel 1945, appena arrivato a Parigi, dove fui assunto da Jeanne Paquin e poi da Elsa Schiaparelli,
+                            mi sarebbe piaciuto diventare ballerino. Sono stato attore. Ho diretto vari miei teatri. Da imprenditore mi sono
+                            occupato di molteplici attività. Ho persino insegnato”.</p>
+
+                            <p>Lo stilista è morto all’età di 98 anni, il 29 dicembre 2020, per cause naturali all’ospedale americano di
+                            Neuilly-sur-Seine, vicino a Parigi. Prima di morire, designa il nipote Rodrigo Basilicati Cardin come erede artistico
+                            della maison, oltre che presidente delle società a lui facenti capo. L’azienda di Pierre Cardin oggi è una
+                            multinazionale importante, famosa in tutto il mondo. Si trova infatti in circa 140 Paesi e ha un valore di mercato pari
+                            a 1 miliardo di euro. Quotata in Borsa e con sedi in tutto il mondo, l’azienda vive da pochissimo tempo la perdita del
+                            suo fondatore, ma porta avanti con successo la sua attività.</p>
+
+                            <p>La società di Cardin ha diversi marchi correlati e le sfilate sono da sempre a porte chiuse, con poche persone
+                            selezionate</p>
+                            <br>
+                            <br>
+                    </div>
+
+                </div>
+                <hr>
+            </div>
+        </section>
     </div>
     <footer>
         <h2 style="text-align: center;" id="sobre">Sobre nós</h2>

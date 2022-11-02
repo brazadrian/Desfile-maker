@@ -5,6 +5,14 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.equipe h1{
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #BA26ED;
+    text-underline-position: above;
+    font-size: 25px;
+}
+
 .equipe h2 {
     text-decoration: underline;text-underline-position: above;
     font-size: 20px;
@@ -16,4 +24,8 @@
 
 .equipe span {
     color: white;
+}
+
+.equipe abbr {
+    text-decoration: none;
 }
