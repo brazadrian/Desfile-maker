@@ -1,0 +1,84 @@
+#cardin h1 {
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #BA23DE;
+    text-underline-position: under;
+    text-transform: uppercase;
+    color: white;
+    font-size: 2.4rem;
+}
+
+#cardin p {
+    color: white;
+    text-align: left;
+    padding-left: 5%;
+    padding-top: 2%;
+    padding-right: 2%;
+}
+
+#cardin a {
+    color: white;
+    background-color: #1A1A1A;
+}
+
+#cardin li {
+    display: inline-block;
+    width: 350px;
+}
+
+@media screen and (min-width:250px) {
+    #cardin img {
+        margin: auto;
+        display: block;
+        max-width: 80%;
+        min-width: 50%;
+        border-radius: 10px;
+    }
+    #cardin li {
+        display: inline-block;
+        max-width: 80%;
+        min-width: 50%;
+    }
+}
+
+
+@media screen and (min-width:450px) {
+    #cardin img {
+        margin: auto;
+        display: block;
+        max-width: 80%;
+        min-width: 50%;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (min-width:560px) {
+    #cardin img {
+        margin: auto;
+        display: block;
+        max-width: 80%;
+        min-width: 50%;
+        border-radius: 10px;
+    }
+
+}
+
+@media screen and (min-width:700px) {
+    #cardin img {
+        margin: auto;
+        display: block;
+        max-width: 80%;
+        min-width: 50%;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (min-width:840px) {
+    #cardin img {
+        margin: auto;
+        display: block;
+        max-width: 80%;
+        min-width: 35%;
+        border-radius: 10px;
+    }
+}

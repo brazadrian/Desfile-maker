@@ -9,12 +9,14 @@
     text-align: center;
     text-decoration: underline;
     text-decoration-color: #BA26ED;
-    text-underline-position: above;
-    font-size: 25px;
+    text-underline-position: under;
+    font-size: 2.4rem;
+    padding-top: 3%;
 }
 
 .equipe h2 {
-    text-decoration: underline;text-underline-position: above;
+    text-decoration: underline;
+    text-underline-position: under;
     font-size: 20px;
 }
 
