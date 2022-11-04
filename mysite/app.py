@@ -10,7 +10,7 @@ def galeria():
 
 @app.route('/pecas')
 def pecas():
-    return render_template("peças.html")
+    return render_template("pecas.html")
 
 @app.route('/cardin')
 def cardin():
