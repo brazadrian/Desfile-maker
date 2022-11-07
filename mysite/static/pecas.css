@@ -1,7 +1,36 @@
 #pecas h1 {
+  text-decoration: underline;
+  text-underline-position: under;
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 2.4rem;
+}
+
+#pecas h2 {
+  text-decoration: underline;
+  text-underline-position: under;
+  text-transform: uppercase;
+  text-align: left;
+  color: white;
+  font-size: 1.5rem;
+  padding-left: 5%;
+}
+
+#pecas p {
+  color: white;
+  text-align: left;
+  padding-left: 5%;
+  padding-right: 2%;
+}
+
+#pecas h3 {
+  text-decoration: underline;
+  text-underline-position: under;
+  text-transform: uppercase;
   text-align: center;
-  margin: 1em 0;
-  font-family: sans-serif;
+  color: white;
+  font-size: 1.5rem;
+  padding-left: 5%;
 }
   
 #pecas .container {
