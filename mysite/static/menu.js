@@ -2,16 +2,9 @@ let btnMenu = document.querySelector('.toggle-menu');
 let menuHamburguer = document.querySelector('.menu-hamburguer')
 let body = document.querySelector('body')
 let video = document.querySelector('#videos-link')
-let contatos = document.querySelector('#contatos-link')
-
-btnMenu.addEventListener("click", menu);
+let contatos = document.querySelector('.contatos-link')
 
 
-function link(){
-  menuHamburguer.classList.toggle('show')
-  btnMenu.classList.toggle('active')
-  body.classList.toggle('block')
-}
 
 function menu(){
   menuHamburguer.classList.toggle('show')
@@ -19,5 +12,6 @@ function menu(){
   body.classList.toggle('block')
 }
 
-video.addEventListener('click', link)
-contatos.addEventListener('click', link)
+contatos.addEventListener("click", menu);
+btnMenu.addEventListener("click", menu);
+video.addEventListener("click", menu);
