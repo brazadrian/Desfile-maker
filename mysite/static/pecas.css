@@ -1,94 +1,121 @@
 #pecas h1 {
-    text-align: center;
-    margin: 1em 0;
-    font-family: sans-serif;
-  }
+  text-align: center;
+  margin: 1em 0;
+  font-family: sans-serif;
+}
   
 #pecas .container {
-    position: relative;
-    padding: 15px;
-    max-width: 640px;
-    margin: 0 auto;
-  }
+  position: relative;
+  max-width: 640px;
+  margin: 0 auto;
+}
   
 #pecas .gallery-wrapper {
-    overflow-x: auto;
+  overflow-x: auto;
+}
+  
+#pecas .arrow-left, .arrow-right {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: auto;
+  bottom: 0;
+  font-size: 20px;
+  line-height: 250px;
+  width: 40px;
+  color: #fff;
+  transition: all 600ms ease-in-out;
+  background: linear-gradient(to left, transparent 0%, black 200%);
+  opacity: 0.1;
+  cursor: pointer;
+  border: none;
   }
   
-#pecas .arrow-left,
-  .arrow-right {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: auto;
-    bottom: 0;
-    font-size: 20px;
-    line-height: 250px;
-    width: 40px;
-    color: #fff;
-    transition: all 600ms ease-in-out;
-    background: linear-gradient(to left, transparent 0%, black 200%);
-    opacity: 0.1;
-    cursor: pointer;
-    border: none;
+#pecas  .arrow-left:hover, .arrow-right:hover {
+  opacity: 1;
   }
   
-#pecas  .arrow-left:hover,
-  .arrow-right:hover {
-    opacity: 1;
-  }
+#pecas .arrow-right {
+  right: 0;
+  left: auto;
+  text-align: right;
+  background: linear-gradient(to right, transparent 0%, black 200%);
+}
   
-  #pecas .arrow-right {
-    right: 0;
-    left: auto;
-    text-align: right;
-    background: linear-gradient(to right, transparent 0%, black 200%);
-  }
+#pecas .gallery {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 15px;
+}
   
-  #pecas .gallery {
-    display: flex;
-    flex-flow: row nowrap;
-    gap: 15px;
-  }
+#pecas .item {
+  width: 100px;
+  height: 300px;
+  border: 2px solid #BA23ED;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #0006;
+  flex-grow: 1;
+  transition: transform .3s linear;
+  object-fit: cover;
+}
   
-  #pecas .item {
-    width: 250px;
-    height: 250px;
-    flex-shrink: 0;
-    transition: all 600ms ease-in-out;
-    opacity: 0.5;
-  }
-  
-  #pecas .current-item {
-    opacity: 1;
-  }
+#pecas .current-item {
+  opacity: 1;
+}
 
-  #pecas .gallery-wrapper::-webkit-scrollbar {
-    display: none;
+#pecas .gallery-wrapper::-webkit-scrollbar {
+  display: none;
+}
+  
+#pecas .gallery-wrapper {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+  
+#pecas .cyan {
+  background: cyan;
+}
+  
+#pecas .deeppink {
+  background: deeppink;
   }
   
-  #pecas .gallery-wrapper {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
+#pecas .turquoise {
+  background: turquoise;
+}
   
-  #pecas .cyan {
-    background: cyan;
-  }
+#pecas .darkblue {
+  background: darkblue;
+}
   
-  #pecas .deeppink {
-    background: deeppink;
-  }
+#pecas .purple {
+  background: purple;
+}
   
-  #pecas .turquoise {
-    background: turquoise;
-  }
+#pecas h1 {
+  text-decoration: underline;
+  text-underline-position: under;
+  text-transform: uppercase;
+  color: white;
+  padding-left: 5%;
+  font-size: 2.4rem;
+  text-align: left;
+}
   
-  #pecas .darkblue {
-    background: darkblue;
-  }
-  
-  #pecas .purple {
-    background: purple;
-  }
-  
+#pecas p {
+  color: white;
+  text-align: left;
+  padding-left: 5%;
+  padding-top: 5%;
+  padding-right: 2%;
+  text-align: left;
+}
+
+#lookDestaque {
+  border-radius: 1.5rem 1.5rem 0 0;
+  width: 200px;
+  height: 400px;
+  display: block;
+  margin: 0 auto;
+  object-fit: cover;
+}

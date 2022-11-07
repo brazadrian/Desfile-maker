@@ -47,7 +47,6 @@
 }
 
 .carousel .carousel__actions button#carousel__button--prev {
-  
   margin-left: 0px;
 }
 
@@ -89,8 +88,8 @@
   padding: 0 2vw;
 }
 .gallery-items{
-  width: 340px;
-  height: 340px;
+  width: 152px;
+  height: 600px;
   border: 1.5px solid #FFF;
   border-radius: 10px;
   box-shadow: 5px 5px 5px #0006;
