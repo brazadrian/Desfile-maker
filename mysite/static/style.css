@@ -175,20 +175,55 @@ footer h2 {
     color: white;
 }
 
-footer p {
-    color: white;
+.icones-redes{
+    display: flex;
+    padding-left: 2%;
 }
 
-footer a {
-    display: flex;
-    justify-content: center;
+.icones-redes img {
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-left: 10px;
+}
 
+footer p {
+    color: white;
+    padding-left: 2%;
+}
+
+footer h4 {
+    text-decoration: underline;
+    color: white;
+    text-underline-position: under;
+    text-decoration-color: #3ED948;
+    padding-left: 2%;
 }
 
 footer .logosenac {
-    max-width: 30%;
-    min-width: 10%;
+    max-width: 50%;
+    min-width: 25%;
 
+}
+
+.links-uteis {
+    color: white;
+    padding-left: 2%;
+}
+
+.links-uteis a {
+    text-decoration: none;
+    color: #ed26ab;
+    text-align: left;
+}
+
+.direitos-autorais{
+    text-align: center;
+} 
+
+#logo-senac a{
+    display: flex;
+    justify-content: center;
 }
 
 @media screen and (min-width:450px) {
@@ -282,4 +317,13 @@ hr {
     padding-left: 5%;
     padding-top: 5%;
     padding-right: 2%;
+}
+
+#principal h2 {
+    text-decoration: underline;
+    color: white;
+    text-underline-position: under;
+    text-decoration-color: #3ED948;
+    padding-left: 5%;
+    font-size: 1.8rem;
 }
