@@ -24,6 +24,6 @@ def sobre():
 def vote():
     return render_template("voteaqui.html")
 
-@app.route('/')
+@app.route('/arduino')
 def principal():
-    return render_template("principal.html")
+    return render_template("arduino.html")
