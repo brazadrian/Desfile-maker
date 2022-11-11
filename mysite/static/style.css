@@ -226,26 +226,37 @@ footer .logosenac {
     justify-content: center;
 }
 
+@media screen and (min-width:250px) {
+    #logorecplay {
+        max-width: 80%;
+        min-width: 70%;
+        margin-top: 2%;
+        left: 2%;
+    }
+}
+
 @media screen and (min-width:450px) {
     #logorecplay {
-        max-width: 25%;
-        min-width: 10%;
+        max-width: 40%;
+        min-width: 25%;
+        margin-top: 2%;
         left: 2%;
     }
 }
 
 @media screen and (min-width:560px) {
     #logorecplay {
-        max-width: 20%;
-        min-width: 10%;
+        max-width: 40%;
+        min-width: 25%;
+        margin-top: 2%;
         left: 2%;
     }
 }
 
 @media screen and (min-width:700px) {
     #logorecplay {
-        max-width: 16%;
-        min-width: 10%;
+        max-width: 40%;
+        min-width: 25%;
         left: 2%;
     }
 }
@@ -266,8 +277,8 @@ footer .logosenac {
         max-width: 100%;
     }
     #logorecplay {
-        max-width: 15%;
-        min-width: 10%;
+        max-width: 40%;
+        min-width: 25%;
         left: 2%;
     }
 }
