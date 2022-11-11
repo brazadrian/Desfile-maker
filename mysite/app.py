@@ -4,7 +4,7 @@ import git
 
 app = Flask(__name__)
 
-@app.route('/inicio')
+@app.route('/')
 def galeria():
     return render_template("principal.html")
 

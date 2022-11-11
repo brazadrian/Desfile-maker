@@ -5,7 +5,6 @@ let video = document.querySelector('#videos-link')
 let contatos = document.querySelector('.contatos-link')
 
 
-
 function menu(){
   menuHamburguer.classList.toggle('show')
   btnMenu.classList.toggle('active')

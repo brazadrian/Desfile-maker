@@ -35,7 +35,7 @@
                 <span class="bar"></span></button>
             <div class="menu-hamburguer">
                 <ul>
-                    <li><a href="/principal">INÍCIO</a></li>
+                    <li><a href="/">INÍCIO</a></li>
                     <li>
                         <a href="/galeria">GALERIA DE PEÇAS</a>
                     </li>
@@ -57,7 +57,7 @@
         <section id="pecas">
             <img src="../static/imgs-roupas/1.png" alt="look1" id="lookDestaque">
             <h1 style="text-decoration-color: #B926ED;">Nome</h1>
-            <h2>Nome do Autor:</h2> <button> <img class="curtida" src="../static/imgs/coracaoBranco.png"> </button>
+            <h2>Nome do Autor:</h2> <label>{{curtida}}<a href="/curtida"><button><img class="curtida" src="../static/imgs/coracaoBranco.png"> </button></a></label>
             <p>Leonardo Silveira Gama</p>
             <h2>Materiais Utilizados na Peças:</h2>
             <p>Algodão natural <br>
@@ -83,6 +83,7 @@
                 <div class="container">
                     <div class="gallery-wrapper">
                         <div class="gallery">
+                            <a href="/look2"><img src="../static/imgs-roupas/2.png" alt="look2" class="item current-item"></a>
                             <a href="/look2"><img src="../static/imgs-roupas/2.png" alt="look2" class="item current-item"></a>
                             <a href="/look3"><img src="../static/imgs-roupas/3.png" alt="look3" class="item current-item"></a>
                             <a href="/look4"><img src="../static/imgs-roupas/4.png" alt="look4" class="item current-item"></a>
@@ -174,7 +175,7 @@
         </div>
         <br>
     </footer>
-
+    <script src="../static/curtida.js"></script>
     <script src="../static/menu.js"></script>
     <script src="../static/carousel.js"></script>
     <script src="../static/pecas.js"></script>
