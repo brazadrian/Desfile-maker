@@ -2,6 +2,7 @@ const controls = document.querySelectorAll(".control");
 let currentItem = 0;
 const items = document.querySelectorAll(".item");
 const maxItems = items.length;
+const curtida = document.querySelector('.curtida');
 
 controls.forEach((control) => {
   control.addEventListener("click", (e) => {
@@ -33,5 +34,8 @@ controls.forEach((control) => {
 });
 
 function alterarImagem(){
-  
+}
+
+function trocarCoracao(){
+  curtida.style.backgroundColor = 'red'
 }
