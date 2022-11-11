@@ -1,0 +1,272 @@
+*{
+    font-family:'Roboto', sans-serif;
+ }
+ 
+ .divVotacao:hover{
+    background-color: rgb(68, 224, 94);
+}
+
+.title{
+    color: white;  
+    text-align: center;
+    margin-top: none;
+    padding-top: 5px;
+    padding-bottom: 5px;                        
+}
+
+
+
+.button{
+    background-color: #f6f6f6;
+}
+
+.colunaVotacao > form > p { 
+    color: #222222;
+    font-weight: bold;
+}
+
+
+h3{
+    color: white;
+    margin-top: 60px;
+}
+
+p{
+    color: white;
+    margin-left: 13px;
+}
+
+body{
+    background-color: black;
+}
+
+.divVotacao{
+    width:100%;
+    height:9%;
+	  border:1px solid #999;
+    border-radius: 4px;
+    background-color: black;
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 4%;   
+}
+
+.teste1{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.teste2{
+
+  width: 3%;
+}
+
+.teste3{
+  width: 94%;
+  height: 50%;
+  overflow-y: scroll;
+}
+
+@media screen and (min-width:450px) {
+  #divVotacao{
+    width:200%;
+	  height:100%;
+	  border:2px solid #999;
+    border-radius: 8px;
+    background-color: black;
+    display: flex;
+    flex-flow: row wrap;
+}
+}
+
+@media screen and (min-width:560px) {
+  #divVotacao{
+    width:300%;
+	  height:100%;
+	  border:2px solid #999;
+    border-radius: 8px;
+    background-color: black;
+    display: flex;
+    flex-flow: row wrap;
+}
+}
+
+@media screen and (min-width:700px) {
+  #divVotacao{
+    width:200%;
+	  height:100%;
+	  border:2px solid #999;
+    border-radius: 8px;
+    background-color: black;
+    display: flex;
+    flex-flow: row wrap;
+}
+}
+
+@media screen and (min-width:840px) {
+  #divVotacao{
+    width:200%;
+	  height:100%;
+	  border:2px solid #999;
+    border-radius: 8px;
+    background-color: black;
+    display: flex;
+    flex-flow: row wrap;
+}
+}
+
+.modelo1Votacao{
+    margin: 5%;
+    border-radius: 3px;
+}
+
+.colunaVotacao{
+    width: 50%;
+}
+
+.testeVotacao{
+    background-image: -webkit-linear-gradient(rgb(96, 255, 96), rgb(255, 255, 66));
+    margin-top: 80px;
+    border-radius: 6px;
+    width: 100px;
+    height: 25px;
+}
+
+/* Colors */
+:root {
+  --color-default: #222222;
+  --color-primary: #2b5690;
+  --color-secondary: #f85a40;
+  --color-orange: #fddfdb;
+}
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Sections & Section Header
+--------------------------------------------------------------*/
+section {
+  
+  padding-bottom: 60px;
+  overflow: hidden;
+}
+
+.sections-bg {
+  background-color: #f6f6f6;
+}
+
+.section-header {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-header h2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.section-header h2:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #D2008B;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.section-header p {
+  margin-bottom: 0;
+  color: #6f6f6f;
+}
+
+
+
+/*--------------------------------------------------------------
+# Our Team Section
+--------------------------------------------------------------*/
+.team .member {
+  text-align: center;
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  overflow: hidden;
+  box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
+}
+
+.team .member img {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.team .member .member-content {
+  padding: 0 20px 30px 20px;
+}
+
+.team .member h4 {
+  font-weight: 700;
+  margin-top: 16px;
+  margin-bottom: 2px;
+  font-size: 20px;
+}
+
+.team .member span {
+  font-style: italic;
+  display: block;
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.team .member p {
+  padding-top: 10px;
+  font-size: 14px;
+  font-style: italic;
+  color: #6c757d;
+}
+
+.team .member .social {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.team .member .social a {
+  color: #a2a2a2;
+  transition: 0.3s;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  justify-content: center;
+  border: 1px solid #bbbbbb;
+}
+
+.team .member .social a:hover {
+  color: #D2008B;
+  border-color: #D2008B;
+}
+
+.team .member .social i {
+  font-size: 18px;
+  margin: 0 2px;
+}
+
+@media screen and (min-width:450px) {
+  #div {
+      max-width: 25%;
+      min-width: 10%;
+      left: 2%;
+  }
+}
