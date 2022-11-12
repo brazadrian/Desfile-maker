@@ -33,9 +33,3 @@ controls.forEach((control) => {
   });
 });
 
-function alterarImagem(){
-}
-
-function trocarCoracao(){
-  curtida.style.backgroundColor = 'red'
-}
