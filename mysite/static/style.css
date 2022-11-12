@@ -149,6 +149,7 @@ footer {
     margin-right: 5%;
     margin-bottom: 5%;
     border-radius: 0 0 1.5rem 1.5rem;
+    line-height: 25px;
 }
 
 footer h2 {
@@ -213,7 +214,6 @@ footer .logosenac {
 
 .links-uteis a {
     text-decoration: none;
-    color: #ed26ab;
     text-align: left;
 }
 
@@ -226,10 +226,19 @@ footer .logosenac {
     justify-content: center;
 }
 
+@media screen and (max-width:249px) {
+    #logorecplay {
+        max-width: 60%;
+        min-width: 40%;
+        margin-top: 2%;
+        left: 2%;
+    }
+}
+
 @media screen and (min-width:250px) {
     #logorecplay {
-        max-width: 80%;
-        min-width: 70%;
+        max-width: 60%;
+        min-width: 40%;
         margin-top: 2%;
         left: 2%;
     }
@@ -237,33 +246,48 @@ footer .logosenac {
 
 @media screen and (min-width:450px) {
     #logorecplay {
-        max-width: 40%;
-        min-width: 25%;
+        max-width: 50%;
+        min-width: 40%;
         margin-top: 2%;
         left: 2%;
+    }
+
+    nav {
+        height: 60px;
+        width: auto;
     }
 }
 
 @media screen and (min-width:560px) {
     #logorecplay {
-        max-width: 40%;
-        min-width: 25%;
+        max-width: 50%;
+        min-width: 40%;
         margin-top: 2%;
         left: 2%;
+    }
+
+    nav {
+        height: 80px;
+        width: auto;
     }
 }
 
 @media screen and (min-width:700px) {
     #logorecplay {
-        max-width: 40%;
-        min-width: 25%;
+        max-width: 50%;
+        min-width: 40%;
         left: 2%;
+    }
+
+    nav {
+        height: 100px;
+        width: auto;
     }
 }
 
 @media screen and (min-width:840px) {
     nav{
-        height: auto;
+        height: 100px;
         width: auto;
     }
     nav li {
@@ -271,14 +295,17 @@ footer .logosenac {
     }
     .toggle-menu{
         margin-top: 2vh;
+        height: 30px;
+        width: auto;
     }
     .show{
         top: 10vh;
         max-width: 100%;
     }
     #logorecplay {
-        max-width: 40%;
-        min-width: 25%;
+        max-width: 45%;
+        min-width: 40%;
+        padding-bottom: 10px;
         left: 2%;
     }
 }
