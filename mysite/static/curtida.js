@@ -1,12 +1,5 @@
-const button = document.querySelector('#like');
-const number = document.querySelector('#number');
+var img = document.querySelector("#imagem");
+img.setAttribute('src','../static/imgs/coracaovermelho.png');
 
-button.addEventListener('click', () => {
-  let likeValue = document.querySelector('#number').textContent;
-  let newValue = Number(likeValue) + 1;
-  button.classList.add('like');
-  number.innerHTML = newValue;
-});
 
-curtida.addEventListener('click', trocarCoracao)  
 
