@@ -58,7 +58,12 @@
             <img src="../static/imgs-roupas/7.png" alt="look7" id="lookDestaque">
             <label class="contador">Likes:{{curtida}}</label>
             <h1 style="text-decoration-color: #B926ED;">Nome</h1>
-            <h2>Nome do Autor:</h2> <a href="/curtida7" method="post"><img class="curtida" src="../static/imgs/coracaoBranco.png"></a>
+            <h2>Nome do Autor:</h2>
+            <form action="/curtida7" method="POST">
+                 <button class="curtida">
+                         <img src="../static/imgs/coracaoBranco.png">
+                  </button>
+            </form>
             <p>Edi Uriel Mendonça de Almeida Resende</p>
             <h2>Materiais Utilizados na Peças:</h2>
             <p>Fio de Led: Linha condutora, Ziper, Tecido-Algodão, Crinolina ou algo parecido para amar a parte do chapéu</p>

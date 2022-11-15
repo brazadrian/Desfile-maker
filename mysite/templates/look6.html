@@ -58,7 +58,12 @@
             <img src="../static/imgs-roupas/6.png" alt="look7" id="lookDestaque">
             <label class="contador">Likes:{{curtida}}</label>
             <h1 style="text-decoration-color: #B926ED;">Nome</h1>
-            <h2>Nome do Autor:</h2> <a href="/curtida6" method="post"><img class="curtida" src="../static/imgs/coracaoBranco.png"></a>
+            <h2>Nome do Autor:</h2>
+            <form action="/curtida6" method="POST">
+                 <button class="curtida">
+                         <img src="../static/imgs/coracaoBranco.png">
+                  </button>
+            </form>
             <p>João Pereira de Assis Neto</p>
             <h2>Materiais Utilizados na Peças:</h2>
             <p>Algodão Cru, Led</p>
