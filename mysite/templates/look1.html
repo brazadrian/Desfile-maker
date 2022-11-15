@@ -56,13 +56,13 @@
     <div id="basedosite">
         <section id="pecas">
             <img src="../static/imgs-roupas/1.png" alt="look1" id="lookDestaque">
-            <label class="contador">Likes:{{curtida}}</label></form>
+            <label class="contador">Likes:{{curtida}}</label>
             <h1 style="text-decoration-color: #B926ED;">Nome</h1>
             <h2>Nome do Autor:</h2>
-             <form method="get">
+             <form action="/curtida" method="get">
                 <a href="/curtida" methods="post">
-                    <button  type="submit">
-                        <img class="curtida" src="../static/imgs/coracaoBranco.png" >
+                    <button  type="submit" >
+                        <img class="curtida" src="../static/imgs/coracaoBranco.png">
                     </button>
                 </a>
             </form>
