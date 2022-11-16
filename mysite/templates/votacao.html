@@ -57,6 +57,10 @@
                 <div class="teste3">
                     <div class="title"><h1>VOTE NO SEU LOOK PREFERIDO!</h1></div>
                     <class>
+                        <!--<form method="POST" class="form-a" action="/a">
+                                <div class="new"><input type="radio" name="voto" class="teste" value="1"></div>
+                                <input id="btn" type="submit" name="botao" value="Enviar">
+                            </form>-->
                         <div class="divVotacao">
                             <div class="colunaVotacao">
                                 <img class = modelo1Votacao src="img/modelo1.jpeg" alt="" width="150px" height="150px">
@@ -64,8 +68,8 @@
                             <div class="colunaVotacao">
                                 <h3>NOME MODELO</h3>
                                 <p>nome autor croqui</p>
-                                <form class="button" action="" method="post">
-                                    <p>VOTAR</p>
+                                <form class="button" action="/voto" method="post">
+                                    <input id="btn" type="submit" name="botao" value="VOTAR">
                                 </form>
                             </div>                                                       
                                               
@@ -78,7 +82,7 @@
                             <div class="colunaVotacao">
                                 <h3>NOME MODELO</h3>
                                 <p>nome autor croqui</p>
-                                <form class="button" action="" method="post">
+                                <form class="button" action="/voto2" method="post">
                                     <p>VOTAR</p>
                                 </form>
                             </div>                                                                                                     
@@ -91,7 +95,7 @@
                             <div class="colunaVotacao">
                                 <h3>NOME MODELO</h3>
                                 <p>nome autor croqui</p>
-                                <form class="button" action="" method="post">
+                                <form class="button" action="/voto3" method="post">
                                     <p>VOTAR</p>
                                 </form>
                             </div>                                                                                                     
@@ -104,7 +108,7 @@
                             <div class="colunaVotacao">
                                 <h3>NOME MODELO</h3>
                                 <p>nome autor croqui</p>
-                                <form class="button" action="" method="post">
+                                <form class="button" action="/voto4" method="post">
                                     <p>VOTAR</p>
                                 </form>
                             </div>                                                                                                     
@@ -117,7 +121,7 @@
                             <div class="colunaVotacao">
                                 <h3>NOME MODELO</h3>
                                 <p>nome autor croqui</p>
-                                <form class="button" action="" method="post">
+                                <form class="button" action="/voto5" method="post">
                                     <p>VOTAR</p>
                                 </form>
                             </div>                                                                                                     
@@ -130,7 +134,7 @@
                             <div class="colunaVotacao">
                                 <h3>NOME MODELO</h3>
                                 <p>nome autor croqui</p>
-                                <form class="button" action="" method="post">
+                                <form class="button" action="/voto6" method="post">
                                     <p>VOTAR</p>
                                 </form>
                             </div>                                                                                                     
@@ -143,7 +147,7 @@
                             <div class="colunaVotacao">
                                 <h3>NOME MODELO</h3>
                                 <p>nome autor croqui</p>
-                                <form class="button" action="" method="post">
+                                <form class="button" action="/voto7" method="post">
                                     <p>VOTAR</p>
                                 </form>
                             </div>                                                                                                     
@@ -156,7 +160,7 @@
                             <div class="colunaVotacao">
                                 <h3>NOME MODELO</h3>
                                 <p>nome autor croqui</p>
-                                <form class="button" action="" method="post">
+                                <form class="button" action="/voto8" method="post">
                                     <p>VOTAR</p>
                                 </form>
                             </div>                                                                                                     
@@ -169,7 +173,7 @@
                             <div class="colunaVotacao">
                                 <h3>NOME MODELO</h3>
                                 <p>nome autor croqui</p>
-                                <form class="button" action="" method="post">
+                                <form class="button" action="/voto9" method="post">
                                     <p>VOTAR</p>
                                 </form>
                             </div>                                                                                                     
@@ -182,7 +186,20 @@
                             <div class="colunaVotacao">
                                 <h3>NOME MODELO</h3>
                                 <p>nome autor croqui</p>
-                                <form class="button" action="" method="post">
+                                <form class="button" action="/voto10" method="post">
+                                    <p>VOTAR</p>
+                                </form>
+                            </div>                                                                                                     
+                        </div>
+
+                        <div class="divVotacao">
+                            <div class="colunaVotacao">
+                                <img class = modelo1Votacao src="img/modelo1.jpeg" alt="" width="150px" height="150px">
+                            </div>
+                            <div class="colunaVotacao">
+                                <h3>NOME MODELO</h3>
+                                <p>nome autor croqui</p>
+                                <form class="button" action="/voto11" method="post">
                                     <p>VOTAR</p>
                                 </form>
                             </div>                                                                                                     
@@ -274,5 +291,117 @@
         <br>
     </footer>
 
+    <script type="text/javascript">
+        $(document).on('submit', '.voto-1', function (e) {
+            e.preventDefault();
+            $.ajax({
+                type: 'POST',
+                url: '/voto',
+                data: {
+                    roupa1: $(".teste").val()
+                }
+            })
+        });
+        $(document).on('submit', '.voto-2', function (e) {
+            e.preventDefault();
+            $.ajax({
+                type: 'POST',
+                url: '/voto2',
+                data: {
+                    roupa2: $(".roupa2").val()
+                }
+            })
+        });
+        $(document).on('submit', '.voto-3', function (e) {
+            e.preventDefault();
+            $.ajax({
+                type: 'POST',
+                url: '/voto3',
+                data: {
+                    roupa2: $(".roupa2").val()
+                }
+            })
+        });
+        $(document).on('submit', '.voto-4', function (e) {
+            e.preventDefault();
+            $.ajax({
+                type: 'POST',
+                url: '/voto4',
+                data: {
+                    roupa2: $(".roupa2").val()
+                }
+            })
+        });
+        $(document).on('submit', '.voto-5', function (e) {
+            e.preventDefault();
+            $.ajax({
+                type: 'POST',
+                url: '/voto5',
+                data: {
+                    roupa2: $(".roupa2").val()
+                }
+            })
+        });
+        $(document).on('submit', '.voto-6', function (e) {
+            e.preventDefault();
+            $.ajax({
+                type: 'POST',
+                url: '/voto6',
+                data: {
+                    roupa2: $(".roupa2").val()
+                }
+            })
+        });
+        $(document).on('submit', '.voto-7', function (e) {
+            e.preventDefault();
+            $.ajax({
+                type: 'POST',
+                url: '/voto7',
+                data: {
+                    roupa2: $(".roupa2").val()
+                }
+            })
+        });
+        $(document).on('submit', '.voto-8', function (e) {
+            e.preventDefault();
+            $.ajax({
+                type: 'POST',
+                url: '/voto8',
+                data: {
+                    roupa2: $(".roupa2").val()
+                }
+            })
+        });
+        $(document).on('submit', '.voto-9', function (e) {
+            e.preventDefault();
+            $.ajax({
+                type: 'POST',
+                url: '/voto9',
+                data: {
+                    roupa2: $(".roupa2").val()
+                }
+            })
+        });
+        $(document).on('submit', '.voto-10', function (e) {
+            e.preventDefault();
+            $.ajax({
+                type: 'POST',
+                url: '/voto10',
+                data: {
+                    roupa2: $(".roupa2").val()
+                }
+            })
+        });
+        $(document).on('submit', '.voto-11', function (e) {
+            e.preventDefault();
+            $.ajax({
+                type: 'POST',
+                url: '/voto11',
+                data: {
+                    roupa2: $(".roupa2").val()
+                }
+            })
+        });
+    </script>
     <script src="../static/menu.js"></script>
 </body>
