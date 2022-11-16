@@ -8,6 +8,15 @@
     font-size: 2.4rem;
 }
 
+#cardin h6  {
+    text-align: center;
+    color: white;
+}
+
+#cardin span {
+    color: #a6ff00;
+}
+
 #cardin p {
     color: white;
     text-align: left;

@@ -108,14 +108,6 @@ nav li {
     width: 100%;
 }
 
-#logorecplay {
-
-    max-width: 30%;
-    min-width: 10%;
-    left: 2%;
-
-}
-
 body {
     background-image: linear-gradient(#8828FE, #FE23D7,#FE5400, #C1DC49, #3ED948);
     width: auto;
@@ -303,10 +295,26 @@ footer .logosenac {
         max-width: 100%;
     }
     #logorecplay {
-        max-width: 45%;
-        min-width: 40%;
-        padding-bottom: 10px;
+        max-width: 40%;
+        min-width: 35%;
         left: 2%;
+    }
+}
+
+@media screen and (min-width:950px) {
+    nav{
+        height: 100px;
+        width: auto;
+    }
+    #logorecplay {
+        max-width: 25%;
+        min-width: 24%;
+        left: 2%;
+        padding-bottom: 20px;
+    }
+    #logo-senac img{
+        max-width: 20%;
+        min-width: 10%;
     }
 }
 
