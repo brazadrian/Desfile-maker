@@ -17,6 +17,55 @@
     <link rel="stylesheet" type="text/css" href="../static/style.css" />
     <link rel="stylesheet" href="../static/pecas.css">
 
+    <style>
+    html { 
+        font-family: Helvetica; 
+        display: inline-block; 
+        margin: 0px auto; 
+        text-align: center;
+    }
+    body{
+        margin-top: 50px;
+    } 
+    h1 {
+        color: #444444;
+        margin: 50px auto 30px;
+    } 
+    h3 {color: #444444;
+        margin-bottom: 50px;
+    }
+    .button {
+        display: block;
+        width: 80px;
+        background-color: #1abc9c;
+        border: none;
+        color: white;
+        padding: 13px 30px;
+        text-decoration: none;
+        font-size: 25px;
+        margin: 0px auto 35px;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+    .button-on {
+        background-color: #1abc9c;
+    }
+    .button-on:active {
+        background-color: #16a085;
+    }
+    .button-off {
+        background-color: #34495e;
+    }
+    .button-off:active {
+        background-color: #2c3e50;
+    }
+    p {
+        font-size: 14px;
+        color: #888;
+        margin-bottom: 10px;
+    }
+    </style>
+
     <title>Rec'n'Play 22</title>
 </head>
 
@@ -85,22 +134,17 @@
             <br>
                 <div class="container">
                     <div class="gallery-wrapper">
-                        <div class="gallery">
-                            <a href="/look2"><img src="../static/imgs-roupas/2.png" alt="look2" class="item current-item"></a>
-                            <a href="/look3"><img src="../static/imgs-roupas/3.png" alt="look3" class="item current-item"></a>
-                            <a href="/look4"><img src="../static/imgs-roupas/4.png" alt="look4" class="item current-item"></a>
-                            <a href="/look5"><img src="../static/imgs-roupas/5.png" alt="look5" class="item current-item"></a>
-                            <a href="/look6"><img src="../static/imgs-roupas/6.png" alt="look6" class="item current-item"></a>
-                            <a href="/look7"><img src="../static/imgs-roupas/7.png" alt="look7" class="item current-item"></a>
-                            <a href="/look8"><img src="../static/imgs-roupas/8.png" alt="look8" class="item current-item"></a>
-                            <a href="/look9"><img src="../static/imgs-roupas/9.png" alt="look9" class="item current-item"></a>
-                            <a href="/look10"><img src="../static/imgs-roupas/10.png" alt="look10" class="item current-item"></a>
-                            <a href="/look11"><img src="../static/imgs-roupas/11.png" alt="look11" class="item current-item"></a>
+                        <div class="interação">
+                            
                          </div>
                     </div>
                 </div>
             <br>
             <hr>
+            <p>LED1 Status: ON</p><a class="button button-off\" href="/led1off\">OFF</a>
+            <p>LED1 Status: OFF</p><a class="button button-on\" href="/led1on\">ON</a>
+            <p>LED2 Status: ON</p><a class="button button-off\" href="/led2off\">OFF</a>
+            <p>LED2 Status: OFF</p><a class="button button-on\" href="/led2on\">ON</a>
         </section>
     </div>
 
