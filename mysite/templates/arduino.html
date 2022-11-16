@@ -16,55 +16,7 @@
 
     <link rel="stylesheet" type="text/css" href="../static/style.css" />
     <link rel="stylesheet" href="../static/pecas.css">
-
-    <style>
-    html { 
-        font-family: Helvetica; 
-        display: inline-block; 
-        margin: 0px auto; 
-        text-align: center;
-    }
-    body{
-        margin-top: 50px;
-    } 
-    h1 {
-        color: #444444;
-        margin: 50px auto 30px;
-    } 
-    h3 {color: #444444;
-        margin-bottom: 50px;
-    }
-    .button {
-        display: block;
-        width: 80px;
-        background-color: #1abc9c;
-        border: none;
-        color: white;
-        padding: 13px 30px;
-        text-decoration: none;
-        font-size: 25px;
-        margin: 0px auto 35px;
-        cursor: pointer;
-        border-radius: 4px;
-    }
-    .button-on {
-        background-color: #1abc9c;
-    }
-    .button-on:active {
-        background-color: #16a085;
-    }
-    .button-off {
-        background-color: #34495e;
-    }
-    .button-off:active {
-        background-color: #2c3e50;
-    }
-    p {
-        font-size: 14px;
-        color: #888;
-        margin-bottom: 10px;
-    }
-    </style>
+    <link rel="stylesheet" type="text/css" href="../static/arduino.css">
 
     <title>Rec'n'Play 22</title>
 </head>
@@ -96,6 +48,7 @@
                     </li>
                     <li><a href="/votacao">VOTE AQUI</a></li>
                     <li><a href="/cardin">PIERRE CARDIN</a></li>
+                    <li><a href="/arduino">MANEQUIM</a></li>
                 </ul>
             </div>
         </nav>
@@ -105,14 +58,8 @@
     <div id="basedosite">
         <section id="pecas">
             <img src="../static/imgs-roupas/1.png" alt="look1" id="lookDestaque">
-            <label class="contador">Likes:{{curtida}}</label>
             <h1 style="text-decoration-color: #B926ED;"></h1>
             <h2>Nome do Autor:</h2>
-             <form action="/curtida" method="POST">
-                 <button class="curtida">
-                         <img src="../static/imgs/coracaoBranco.png">
-                  </button>
-            </form>
             <p></p>
             <h2>Materiais Utilizados na Peças:</h2>
             <p></p>
@@ -141,10 +88,10 @@
                 </div>
             <br>
             <hr>
-            <p>LED1 Status: ON</p><a class="button button-off\" href="/led1off\">OFF</a>
-            <p>LED1 Status: OFF</p><a class="button button-on\" href="/led1on\">ON</a>
-            <p>LED2 Status: ON</p><a class="button button-off\" href="/led2off\">OFF</a>
-            <p>LED2 Status: OFF</p><a class="button button-on\" href="/led2on\">ON</a>
+            <button><a class="button button-off\" href="/setmodelo">OFF</a></button>
+            <button><a class="button button-on\" href="/statusmodeloum">ON</a></button>
+            <button><a class="button button-off\" href="/led2off\">OFF</a></button>
+            <button><a class="button button-on\" href="/led2on\">ON</a></button>
         </section>
     </div>
 
