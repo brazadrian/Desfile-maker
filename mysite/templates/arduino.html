@@ -90,17 +90,14 @@
                 </div>
             <br>
             <hr>
-            <form class="colar" action="/statusmodeloum" method="POST">
-                <button type="submit" class="button button-on\" value="colar">ON</button>
+            <form class="colar" action="/setamodelo" method="POST">
+                <button type="submit" class="button button-on\" name="colar" value="colar">ON</button>
             </form>
-            <form class="janela" action="/setmodelo" method="POST">
-                <button type="submit" class="button button-on\" value="janela">ON</button>
+            <form class="janela" action="/setamodelo" method="POST">
+                <button type="submit" class="button button-on\" name="janela" value="janela">ON</button>
             </form>
-            <form class="olhos" action="/statusmodeloum" method="POST">
-                <button type="submit" class="button button-on\" value="olhos">ON</button>
-            </form>
-            <form class="crab" action="/statusmodeloum" method="POST">
-                <button type="submit" class="button button-on\" value="crab">ON</button>
+            <form class="olhos" action="/setamodelo" method="POST">
+                <button type="submit" class="button button-on\" name="olhos" value="olhos">ON</button>
             </form>
         </section>
     </div>
@@ -185,19 +182,9 @@
             e.preventDefault();
             $.ajax({
                 type: 'POST',
-                url: '/statusmodeloum',
+                url: '/setamodelo',
                 data: {
                     colar: $(".colar").val()
-                }
-            })
-        });
-        $(document).on('submit', '.crab', function (e) {
-            e.preventDefault();
-            $.ajax({
-                type: 'POST',
-                url: '/setmodelo',
-                data: {
-                    roupa2: $(".roupa2").val()
                 }
             })
         });
@@ -205,9 +192,9 @@
             e.preventDefault();
             $.ajax({
                 type: 'POST',
-                url: '/statusmodeloum',
+                url: '/setamodelo',
                 data: {
-                    roupa2: $(".roupa2").val()
+                    janela: $(".janela").val()
                 }
             })
         });
@@ -215,9 +202,9 @@
             e.preventDefault();
             $.ajax({
                 type: 'POST',
-                url: '/statusmodeloum',
+                url: '/setamodelo',
                 data: {
-                    roupa2: $(".roupa2").val()
+                    olhos: $(".olhos").val()
                 }
             })
         });
