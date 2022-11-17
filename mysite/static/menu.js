@@ -11,6 +11,6 @@ function menu(){
   body.classList.toggle('block')
 }
 
-contatos.addEventListener("click", menu);
 btnMenu.addEventListener("click", menu);
+contatos.addEventListener("click", menu);
 video.addEventListener("click", menu);
