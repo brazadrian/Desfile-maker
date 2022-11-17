@@ -4,7 +4,9 @@
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
 }
-
+.foto-geral{
+    border-radius: 1.5rem  1.5rem 0 0;
+}
 .equipe h1{
     text-align: center;
     text-decoration: underline;
