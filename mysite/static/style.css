@@ -18,6 +18,8 @@ sans-serif;
     font-family:'Roboto', sans-serif;
 }
 
+/* Nav do Site */
+
 nav {
     background-color: black;
     width: 100%;
@@ -117,6 +119,8 @@ body {
 
 }
 
+/* Base do Site */
+
 #basedosite {
     background-color: #1A1A1A;
     width: 90%;
@@ -127,6 +131,14 @@ body {
     justify-content: center;
     border-radius: 1.5rem 1.5rem 0 0;
 }
+
+hr {
+    width: 80%;
+    margin: auto;
+    color: gray;
+}
+
+/* Footer */
 
 footer {
     background-color: black;
@@ -142,42 +154,31 @@ footer {
     margin-bottom: 5%;
     border-radius: 0 0 1.5rem 1.5rem;
     line-height: 25px;
+    color: white;
+}
+
+.contatos {
+    display: flex;
+    flex-direction: row;
+    padding-left: 2%;
 }
 
 footer h2 {
     text-decoration: underline;
-    color: white;
     text-underline-position: under;
     text-decoration-color: #3ED948;
-    padding-left: 2%;
-}
-
-.textofooter {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    width: 100%;
-}
-
-.textorodape {
-    text-decoration: underline;
-}
-
-.nomes {
-    text-decoration: underline;
     color: white;
 }
 
-.icones-redes{
+.contato-senac {
     display: flex;
-    padding-left: 2%;
+    flex-direction: column;
+    padding-right: 30%;
 }
 
-.icones-redes img {
-    width: 30px;
-    height: 30px;
-    float: left;
-    margin-left: 10px;
+.contato-recnplay {
+    display: flex;
+    flex-direction: column;
 }
 
 footer p {
@@ -218,6 +219,100 @@ footer .logosenac {
     justify-content: center;
 }
 
+/* Icones de redes sociais */
+
+.icones-redes {
+    display: flex;
+    padding-left: 2%;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.icones-redes ul {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.icones-redes ul li {
+    list-style: none;
+}
+
+.icones-redes ul li a {
+    width: 70px;
+    height: 70px;
+    background-color: black;
+    text-align: center;
+    line-height: 80px;
+    font-size: 35px;
+    margin: 0 10px;
+    display: block;
+    border-radius: 90%;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #fff;
+    text-decoration: none;
+    z-index: 1;
+}
+
+.icones-redes ul li a .icon {
+    position: relative;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+    transition: .5s;
+    z-index: 3;
+}
+
+.icones-redes ul li a:hover .icon {
+    color: #fff;
+    transform: rotateY(360deg);
+}
+
+.icones-redes ul li a:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1A1A1A;
+    border: 1px solid white;
+    transition: .5s;
+    z-index: 2;
+}
+
+.icones-redes ul li a:hover:before {
+    top: 0;
+}
+
+.icones-redes ul li:nth-child(1) a:before {
+    background: #8828FE;
+}
+
+.icones-redes ul li:nth-child(2) a:before {
+    background: #55acee;
+}
+
+.icones-redes ul li:nth-child(3) a:before {
+    background: #0077b5;
+}
+
+/* Responsividade */
+
+/* Responsividade dos Icones Sociais*/
+
+@media screen and (max-width: 800px) {
+    .contatos {
+        display: flex;
+        flex-direction: column;
+        padding-left: 2%;
+    }
+}
+
+/* Responsividade do Logo*/
+
 @media screen and (max-width:249px) {
     #logorecplay {
         max-width: 60%;
@@ -233,6 +328,12 @@ footer .logosenac {
         min-width: 40%;
         margin-top: 2%;
         left: 2%;
+    }
+}
+
+@media screen and (max-width:450px) {
+    footer h2 {
+        font-size: 1.5em;
     }
 }
 
@@ -318,9 +419,7 @@ footer .logosenac {
     }
 }
 
-.contatos{
-    font-size: xx-large;
-}
+/* Video */
 
 figure {width: 50%; min-width: 22em; margin:0 auto;}
 .boxVideo {
@@ -340,12 +439,6 @@ figure {width: 50%; min-width: 22em; margin:0 auto;}
     border-radius: 20px;
 }
 
-hr {
-    width: 80%;
-    margin: auto;
-    color: gray;
-}
-
 /*Principal*/
 
 #principal h1{
@@ -361,7 +454,7 @@ hr {
     color: white;
     text-align: left;
     padding-left: 5%;
-    padding-top: 5%;
+    margin-top: 30px;
     padding-right: 2%;
 }
 
