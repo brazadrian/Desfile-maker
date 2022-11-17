@@ -90,7 +90,7 @@
                 </div>
             <br>
             <hr>
-            <form class="colar" action="/setmodelo" method="POST">
+            <form class="colar" action="/statusmodeloum" method="POST">
                 <button type="submit" class="button button-on\" value="colar">ON</button>
             </form>
             <form class="janela" action="/setmodelo" method="POST">
@@ -185,7 +185,7 @@
             e.preventDefault();
             $.ajax({
                 type: 'POST',
-                url: '/setmodelo',
+                url: '/statusmodeloum',
                 data: {
                     colar: $(".colar").val()
                 }
