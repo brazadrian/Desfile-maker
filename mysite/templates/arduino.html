@@ -90,13 +90,13 @@
                 </div>
             <br>
             <hr>
-            <form class="colar" action="/setamodelo" method="POST">
+            <form class="colar" action="/setamodelocolar" method="POST">
                 <button type="submit" class="button button-on\" name="colar" value="colar">ON</button>
             </form>
-            <form class="janela" action="/setamodelo" method="POST">
+            <form class="janela" action="/setamodelojanela" method="POST">
                 <button type="submit" class="button button-on\" name="janela" value="janela">ON</button>
             </form>
-            <form class="olhos" action="/setamodelo" method="POST">
+            <form class="olhos" action="/setamodelotodos" method="POST">
                 <button type="submit" class="button button-on\" name="olhos" value="olhos">ON</button>
             </form>
         </section>
@@ -182,7 +182,7 @@
             e.preventDefault();
             $.ajax({
                 type: 'POST',
-                url: '/setamodelo',
+                url: '/setamodelocolar',
                 data: {
                     colar: $(".colar").val()
                 }
@@ -192,7 +192,7 @@
             e.preventDefault();
             $.ajax({
                 type: 'POST',
-                url: '/setamodelo',
+                url: '/setamodelojanela',
                 data: {
                     janela: $(".janela").val()
                 }
@@ -202,7 +202,7 @@
             e.preventDefault();
             $.ajax({
                 type: 'POST',
-                url: '/setamodelo',
+                url: '/setamodelotodos',
                 data: {
                     olhos: $(".olhos").val()
                 }
