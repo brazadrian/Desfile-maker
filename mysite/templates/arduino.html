@@ -91,13 +91,16 @@
             <br>
             <hr>
             <form class="colar" action="/setamodelocolar" method="POST">
-                <button type="submit" class="button button-on\" name="colar" value="colar">ON</button>
+                <button type="submit" class="button button-on\" name="colar" value="colar">COLAR</button>
             </form>
             <form class="janela" action="/setamodelojanela" method="POST">
-                <button type="submit" class="button button-on\" name="janela" value="janela">ON</button>
+                <button type="submit" class="button button-on\" name="janela" value="janela">JANELA</button>
             </form>
-            <form class="olhos" action="/setamodelotodos" method="POST">
-                <button type="submit" class="button button-on\" name="olhos" value="olhos">ON</button>
+            <form class="olhos" action="/setamodeloolhos" method="POST">
+                <button type="submit" class="button button-on\" name="olhos" value="olhos">OLHOS</button>
+            </form>
+            <form class="todos" action="/setamodelotodos" method="POST">
+                <button type="submit" class="button button-on\" name="todos" value="todos">TODOS</button>
             </form>
         </section>
     </div>
@@ -202,9 +205,19 @@
             e.preventDefault();
             $.ajax({
                 type: 'POST',
-                url: '/setamodelotodos',
+                url: '/setamodeloolhos',
                 data: {
                     olhos: $(".olhos").val()
+                }
+            })
+        });
+        $(document).on('submit', '.todos', function (e) {
+            e.preventDefault();
+            $.ajax({
+                type: 'POST',
+                url: '/setamodelotodos',
+                data: {
+                    todos: $(".todos").val()
                 }
             })
         });
